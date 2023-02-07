@@ -1,0 +1,8 @@
+﻿@page "/"
+
+
+
+@inject ExportTryOut.Data.ExportData EmpData
+
+<button type="button" class="btn btn-primary" @onclick="@(()=>EmpData.ExportExcelDoc(@"AddPath", "Sheet1"))"> Export </button>
+
